@@ -10,9 +10,6 @@ function selectionSort() {
         [39, 72, 66, 10, 55, 94, 34, 97, 43],
         [23, 80, 21, 46, 92, 87, 71, 5, 63]
     ];
-
-    console.log(array);
-
     let maxValueIndex = 0;
 
     for (let i = 0; i < array.length; i++) {
