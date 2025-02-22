@@ -137,7 +137,7 @@ class Graph {
         };
 
         for (let key of distanceMap.keys()) {
-            if (key === 1)
+            if (key === firstNode.value)
                 continue;
             let pthValue = this.#nodes.get(key).pathValue;
             let resultPath = `${key}`;
@@ -157,7 +157,6 @@ class Graph {
         }
     };
 };
-
 class PrioritaizeQueue {
     #queue;
     constructor() {
@@ -229,6 +228,6 @@ graph.addEdge(6, 5, 2);
 
 graph.addEdge(5, 3, 2);
 
-graph.dijkstraSearchAlgoritm(1);
+graph.dijkstraSearchAlgoritm(4);
 
 graph.draw();
